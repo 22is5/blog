@@ -1,0 +1,121 @@
+@import url("https://cdn.22is5.com/css/reset.css");
+@import url("https://cdn.22is5.com/fonts/jetbrains-mono.css");
+@import url("https://cdn.22is5.com/fonts/mona-sans.css");
+:root {
+  --bgc: #dedede;
+  --mainbg: #efefef;
+  --accent: #cacaca;
+  --header: #000;
+  --darkbg: #242424;
+}
+body {
+  background-color: var(--bgc);
+  line-height: 1.6;
+  font-family: "Mona Sans";
+  font-size: 16px;
+}
+img {
+  image-rendering: pixelated;
+}
+a {
+  color: #306794;
+}
+.path {
+  margin: 0 0 12px 0;
+  display: flex;
+  width: fit-content;
+  gap: 6px;
+  font-family: "Jetbrains Mono";
+  font-size: 18px;
+}
+.header {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  height: 148px;
+  font-family: "Jetbrains Mono";
+}
+.date {
+  opacity: 0.72;
+  font-family: "Jetbrains Mono Italic";
+  font-weight: 400;
+  font-size: 24px;
+}
+.contentWrapper {
+  display: flex;
+  justify-content: center;
+}
+.content {
+  padding: 24px 12px 12px 12px;
+  width: 720px;
+  background-color: var(--mainbg);
+}
+h1 {
+  font-size: 32px;
+  font-weight: 600;
+}
+.entryWrapper {
+  background-color: var(--bgc);
+  padding: 6px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  border: solid 4px var(--accent);
+  color: var(--header);
+  width: 100%;
+}
+.entryWrapper a {
+  color: inherit;
+}
+.entryIcon {
+  width: 64px;
+  aspect-ratio: 1/1;
+}
+.entryTitle {
+  font-weight: 600;
+  font-size: 24px;
+}
+.entryDate {
+  font-size: 18px;
+  font-family: "Jetbrains Mono Italic";
+  letter-spacing: 2px;
+}
+embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+code {
+  font-family: "Jetbrains Mono";
+  background-color: var(--bgc);
+  user-select: all;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-weight: 200;
+}
+pre {
+  width: 100%;
+  font-family: "Jetbrains Mono";
+  background-color: var(--darkbg);
+  color: #dedede;
+  border-radius: 12px;
+  font-weight: 400;
+  padding: 24px;
+}
+.disclaimer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 0;
+  background-color: #b63d3d;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 256px 0 0 0;
+}

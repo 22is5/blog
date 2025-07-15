@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="ores.css" />
+    <title>22is5 - Docs</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="title">How the Ore Mining Effect Works</div>
+      <div class="date">July 15th, 2025</div>
+    </div>
+    <div class="contentWrapper">
+      <div class="content">
+        <div class="path">
+          <a href="/">docs</a>
+          <div>/</div>
+          <a href="/ores/">ores</a>
+        </div>
+        <h1>Demo</h1>
+        <p>
+          You can click on the deepslate diamond ore to mine it. The one on the
+          right is the "debug" one, to help visualize what is happening.
+        </p>
+        <br />
+        <div class="layer">
+          <div class="diamond-deepslate">
+            <img
+              src=""
+              class="destroy"
+              onclick="mineDeepslate(this)"
+              data-clicks="0"
+              draggable="false"
+            />
+          </div>
+          <div class="debug">
+            <img
+              src=""
+              class="destroy"
+              onclick="mineDebug(this)"
+              data-clicks="0"
+              draggable="false"
+            />
+          </div>
+        </div>
+        <br />
+        <h1>How it Works</h1>
+        <p>
+          Every block is its own <code>div</code>. The class name is whatever
+          block is being displayed. For example, the Deepslate Diamond Ore in
+          the demo above has the class name of <code>diamond-deepslate</code>.
+        </p>
+        <br />
+        <p>
+          Every layer of blocks is stored in a <code>div</code> with the class
+          name <code>layer</code>.
+        </p>
+        <br />
+        <p>
+          What the <code>.layer > *</code> is doing is modifying the style of
+          every child in the <code>.layer</code>. This lets you simplify the css
+          rules for all of the blocks to a single line of code, defining the
+          <code>background-image</code>.
+        </p>
+        <br />
+        <pre>
+        .layer > * {
+          width: 6.25%;
+          aspect-ratio: 1/1;
+          background-size: cover;
+          background-position: center;
+        }
+        .diamond-deepslate {
+          background-image: url("/path/to/diamond-deepslate.png")
+        }
+        .example-block {
+          background-image: url("/path/to/image.png")
+        }</pre
+        >
+        <br />
+        <p>
+          The block breaking textures are are <code>img</code> tags stretched
+          across the whole <code>div</code>.
+        </p>
+        <div class="disclaimer">This article is still being written.</div>
+      </div>
+    </div>
+    <script src="mine.js"></script>
+  </body>
+</html>
