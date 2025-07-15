@@ -1,1 +1,1 @@
-It's a blog, but I didn't want to call it a blog.
+https://blog.22is5.com
