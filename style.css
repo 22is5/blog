@@ -1,6 +1,7 @@
 @import url("https://cdn.22is5.com/css/reset.css");
 @import url("https://cdn.22is5.com/fonts/jetbrains-mono.css");
 @import url("https://cdn.22is5.com/fonts/mona-sans.css");
+@import url("https://cdn.22is5.com/fonts/source-serif.css");
 :root {
   --bgc: #dedede;
   --mainbg: #efefef;
@@ -11,7 +12,7 @@
 body {
   background-color: var(--bgc);
   line-height: 1.6;
-  font-family: "Mona Sans";
+  font-family: "Source Serif";
   font-size: 16px;
 }
 img {
@@ -69,6 +70,8 @@ h1 {
   border: solid 4px var(--accent);
   color: var(--header);
   width: 100%;
+  font-family: "Mona Sans";
+  line-height: 1;
 }
 .entryWrapper a {
   color: inherit;
