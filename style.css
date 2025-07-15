@@ -13,7 +13,7 @@ body {
   background-color: var(--bgc);
   line-height: 1.6;
   font-family: "Source Serif";
-  font-size: 16px;
+  font-size: 18px;
 }
 img {
   image-rendering: pixelated;
