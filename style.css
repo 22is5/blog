@@ -60,6 +60,7 @@ a {
 h1 {
   font-size: 32px;
   font-weight: 600;
+  font-family: "Mona Sans";
 }
 .entryWrapper {
   background-color: var(--bgc);
