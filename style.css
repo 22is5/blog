@@ -2,6 +2,7 @@
 @import url("https://cdn.22is5.com/fonts/jetbrains-mono.css");
 @import url("https://cdn.22is5.com/fonts/mona-sans.css");
 @import url("https://cdn.22is5.com/fonts/source-serif.css");
+
 :root {
   --bgc: #dedede;
   --mainbg: #efefef;
@@ -9,18 +10,22 @@
   --header: #000;
   --darkbg: #242424;
 }
+
 body {
   background-color: var(--bgc);
   line-height: 1.6;
   font-family: "Source Serif";
   font-size: 18px;
 }
+
 img {
   image-rendering: pixelated;
 }
+
 a {
   color: #306794;
 }
+
 .path {
   margin: 0 0 12px 0;
   display: flex;
@@ -29,6 +34,7 @@ a {
   font-family: "Jetbrains Mono";
   font-size: 18px;
 }
+
 .header {
   background-color: #000;
   color: #fff;
@@ -42,26 +48,37 @@ a {
   height: 148px;
   font-family: "Jetbrains Mono";
 }
+
 .date {
   opacity: 0.72;
   font-family: "Jetbrains Mono Italic";
   font-weight: 400;
   font-size: 24px;
 }
+
 .contentWrapper {
   display: flex;
   justify-content: center;
 }
+
 .content {
   padding: 24px 12px 12px 12px;
   width: 720px;
   background-color: var(--mainbg);
 }
+
 h1 {
   font-size: 32px;
   font-weight: 600;
   font-family: "Mona Sans";
 }
+
+.entries {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 .entryWrapper {
   background-color: var(--bgc);
   padding: 6px;
@@ -74,26 +91,32 @@ h1 {
   font-family: "Mona Sans";
   line-height: 1;
 }
+
 .entryWrapper a {
   color: inherit;
 }
+
 .entryIcon {
   width: 64px;
   aspect-ratio: 1/1;
 }
+
 .entryTitle {
   font-weight: 600;
   font-size: 24px;
 }
+
 .entryDate {
   font-size: 18px;
   font-family: "Jetbrains Mono Italic";
   letter-spacing: 2px;
 }
+
 embed {
   width: 100%;
   aspect-ratio: 1/1;
 }
+
 code {
   font-family: "Jetbrains Mono";
   background-color: var(--bgc);
@@ -102,6 +125,7 @@ code {
   border-radius: 4px;
   font-weight: 200;
 }
+
 pre {
   width: 100%;
   font-family: "Jetbrains Mono";
@@ -111,6 +135,7 @@ pre {
   font-weight: 400;
   padding: 24px;
 }
+
 .disclaimer {
   display: flex;
   justify-content: center;

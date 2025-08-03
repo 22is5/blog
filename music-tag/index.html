@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="ores.css" />
+    <title>22is5 - How the Ore Mining Effect Works</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="title">How I Format Tags</div>
+        <div class="date">August 3rd, 2025</div>
+    </div>
+    <div class="contentWrapper">
+        <div class="content">
+            <div class="path">
+                <a href="/">home</a>
+                <div>/</div>
+                <a href="/ores/">ores</a>
+            </div>
+            <pre>
+root
+|- artistName
+|- anotherName
+|- anotherAnotherName
+|  |- YEAR-albumName
+|  |- YEAR-anotherAlbum
+|  |  |- 1-01-trackName.flac
+|  |  |- 1-02-trackName.flac
+|  |  |- 1-03-trackName.flac
+|  |  |- 1-04-trackName.flac
+|  |  |- 1-05-trackName.flac
+|  |  |- 1-06-trackName.flac
+|  |  |- 1-07-trackName.flac
+|  |  |- 1-08-trackName.flac
+|  |  |- cover.png
+|  |- YEAR-theThirdAlbum
+|- newArist
+            </pre>
+            <p>All of my music files follow camelCase capitalization. Which is really pretentious but there's a "good"
+                reason!! It makes URLs look reaaally nice.</p>
+            <p><code>https://music.example.com/artistName/2025-albumTitle/1-06-trackTitle.mp3</code>
+                <br>
+                is a fair bit nicer than
+                <br>
+                <code>https://music.example.com/Artist%20Name/2025%20Album%20Title/1-06%20Track%20Title.mp3</code>
+                <br>
+                And that doesn't even include other unicode like apostrophes. Another benefit is that you can type the
+                URLs from memory a lot easier.
+                <br>
+                <br>
+                You can click to copy the string I use to format the titles here...
+            <div class="copy">
+                $if(%discnumber%,%discnumber%-,)$num(%track%,2)-$regexp($replace($lower($left(%title%,1))$cutleft($caps2(%title%),1),
+                ,),\W,)
+            </div>
+            <br><br>
+            hii ill fix this later im too bored
+            </p>
+        </div>
+    </div>
+    <script src="mine.js"></script>
+</body>
+
+</html>
